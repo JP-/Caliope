@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="etsiitdevs.caliope.JuegoAnimales"
+    tools:showIn="@layout/activity_juego_animales">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:padding="4dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_weight="1"
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:id="@+id/img1"
+                android:src="@drawable/animales"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:id="@+id/img2"
+                android:src="@drawable/animales"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:id="@+id/img3"
+                android:src="@drawable/animales"/>
+        </TableRow>
+
+        <TableRow
+            android:padding="4dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_weight="1"
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:id="@+id/img4"
+                android:src="@drawable/animales"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:id="@+id/img5"
+                android:src="@drawable/animales"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:id="@+id/img6"
+                android:src="@drawable/animales"/>
+        </TableRow>
+
+        <TableRow
+            android:padding="4dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_weight="1"
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:id="@+id/img7"
+                android:src="@drawable/animales"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:id="@+id/img8"
+                android:src="@drawable/animales"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:id="@+id/img9"
+                android:src="@drawable/animales"/>
+        </TableRow>
+
+        <TableRow
+            android:padding="4dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_weight="1"
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:id="@+id/img10"
+                android:src="@drawable/animales"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:id="@+id/img11"
+                android:src="@drawable/animales"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:id="@+id/img12"
+                android:src="@drawable/animales"/>
+        </TableRow>
+
+
+
+    </TableLayout>
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:layout_weight="1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="etsiitdevs.caliope.RegistroAlumnoActivity"
+    tools:showIn="@layout/activity_registro_alumno">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:id="@+id/caliope"
+                android:textSize="40dp"
+                android:textColor="@color/colorText"
+                android:text="@string/caliope" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registro de usuario Alumno"
+                android:id="@+id/info"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="24dp"
+                android:layout_marginBottom="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Id o nick (Ej. alumno123)"
+                android:layout_below="@+id/info"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="20dp"
+                android:id="@+id/id"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id"
+                android:id="@+id/enterid"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha de nacimiento"
+                android:layout_below="@+id/enterid"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="20dp"
+                android:id="@+id/fecha"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:background="@drawable/datebutton"
+                android:textColor="@color/colorPrimaryText"
+                android:layout_margin="4dp"
+                android:text="8/12/2015"
+                android:layout_below="@id/fecha"
+                android:id="@+id/enterfecha"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Asignar tutor?"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="20dp"
+                android:layout_marginTop="40dp"
+                android:id="@+id/tipo"
+                android:layout_below="@+id/enterfecha"/>
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/entertipo"
+                android:layout_below="@id/tipo"
+                android:checkedButton="@+id/no">
+                <RadioButton android:id="@+id/si"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:text="Si"/>
+                <RadioButton android:id="@+id/no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:text="No"/>
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Correo tutor"
+                android:layout_below="@+id/entertipo"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="20dp"
+                android:id="@+id/correo"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/correo"
+                android:inputType="textEmailAddress"
+                android:enabled="false"
+                android:id="@+id/entercorreo"/>
+
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:text="Confirmar"
+                android:textAllCaps="false"
+                android:background="@drawable/button"
+                android:textColor="@color/colorText"
+                android:layout_below="@+id/entercorreo"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/confirmar"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

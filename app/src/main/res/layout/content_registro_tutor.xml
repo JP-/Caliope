@@ -1,0 +1,90 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:layout_weight="1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="etsiitdevs.caliope.RegistroTutorActivity"
+    tools:showIn="@layout/activity_registro_tutor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:id="@+id/caliope"
+                android:textSize="40dp"
+                android:textColor="@color/colorText"
+                android:text="@string/caliope" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registro de usuario Tutor"
+                android:id="@+id/info"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="24dp"
+                android:layout_marginBottom="30dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Correo electrónico"
+                android:layout_below="@+id/info"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="20dp"
+                android:id="@+id/correo"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/correo"
+                android:inputType="textEmailAddress"
+                android:id="@+id/entercorreo"/>
+
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:text="Confirmar"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:background="@drawable/button"
+                android:textColor="@color/colorText"
+                android:layout_below="@+id/entercorreo"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/confirmar"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

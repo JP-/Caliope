@@ -1,0 +1,198 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:layout_weight="1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="etsiitdevs.caliope.EditarAlumnoActivity"
+    tools:showIn="@layout/activity_editar_alumno">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="12sp"
+                android:id="@+id/nombre"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nombre"
+                android:id="@+id/enternombre"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apellidos"
+                android:layout_below="@+id/enternombre"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="12sp"
+                android:id="@+id/apellidos"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/apellidos"
+                android:id="@+id/enterapellidos"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Introduce tu contraseña o una nueva si deseas cambiarla"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="12sp"
+                android:id="@+id/pass"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/enterapellidos"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pass"
+                android:inputType="textPassword"
+                android:id="@+id/enterpass"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vuelva a introducir la contraseña"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="12sp"
+                android:id="@+id/pass2"
+                android:layout_below="@+id/enterpass"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pass2"
+                android:inputType="textPassword"
+                android:id="@+id/enterpass2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Id o nick (Ej. alumno123)"
+                android:layout_below="@+id/enterpass2"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="12sp"
+                android:id="@+id/id"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id"
+                android:editable="false"
+                android:id="@+id/enterid"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha de nacimiento"
+                android:layout_below="@+id/enterid"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="12sp"
+                android:id="@+id/fecha"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:background="@drawable/datebutton"
+                android:textColor="@color/colorPrimaryText"
+                android:layout_margin="4dp"
+                android:text="8/12/2015"
+                android:layout_below="@id/fecha"
+                android:id="@+id/enterfecha"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Asignar tutor?"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="12sp"
+                android:layout_marginTop="40dp"
+                android:id="@+id/tipo"
+                android:layout_below="@+id/enterfecha"/>
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/entertipo"
+                android:layout_below="@id/tipo"
+                android:checkedButton="@+id/no">
+                <RadioButton android:id="@+id/si"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Si"/>
+                <RadioButton android:id="@+id/no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="No"/>
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Correo tutor"
+                android:layout_below="@+id/entertipo"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="12sp"
+                android:id="@+id/correo"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/correo"
+                android:inputType="textEmailAddress"
+                android:id="@+id/entercorreo"/>
+
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:text="Confirmar"
+                android:textAllCaps="false"
+                android:background="@drawable/button"
+                android:textColor="@color/colorText"
+                android:layout_below="@+id/entercorreo"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/confirmar"/>
+
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:text="Dar de baja"
+                android:textAllCaps="false"
+                android:background="@drawable/button2"
+                android:textColor="@color/colorText"
+                android:layout_below="@+id/confirmar"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/darbaja" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

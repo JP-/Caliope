@@ -1,0 +1,165 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:layout_weight="1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="etsiitdevs.caliope.RegistroActivity"
+    tools:showIn="@layout/activity_registro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:id="@+id/caliope"
+                android:textSize="40dp"
+                android:textColor="@color/colorText"
+                android:text="@string/caliope" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registro de usuario"
+                android:id="@+id/info"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="24dp"
+                android:layout_marginBottom="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:layout_below="@+id/info"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="20dp"
+                android:id="@+id/nombre"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nombre"
+                android:id="@+id/enternombre"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apellidos"
+                android:layout_below="@+id/enternombre"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="20dp"
+                android:id="@+id/apellidos"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/apellidos"
+                android:id="@+id/enterapellidos"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contraseña"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="20dp"
+                android:id="@+id/pass"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/enterapellidos"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pass"
+                android:inputType="textPassword"
+                android:id="@+id/enterpass"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vuelva a introducir la contraseña"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="20dp"
+                android:id="@+id/pass2"
+                android:layout_below="@+id/enterpass"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pass2"
+                android:inputType="textPassword"
+                android:id="@+id/enterpass2"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipo de usuario"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tipo"
+                android:layout_below="@+id/enterpass2"/>
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/entertipo"
+                android:layout_below="@id/tipo">
+                <RadioButton android:id="@+id/Alumno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:text="Alumno"/>
+                <RadioButton android:id="@+id/Tutor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:text="Tutor"/>
+            </RadioGroup>
+
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:text="Continuar"
+                android:textAllCaps="false"
+                android:background="@drawable/button"
+                android:textColor="@color/colorText"
+                android:layout_below="@+id/entertipo"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/continuar"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:layout_weight="1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LoginActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/caliope"
+                    android:textSize="40dp"
+                    android:textColor="@color/colorText"
+                    android:text="@string/caliope" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Usuario (correo en caso de tutor o id en caso de alumno)"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="22dp"
+                    android:id="@+id/usuario"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/usuario"
+                    android:id="@+id/enterusuario"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contraseña"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="22dp"
+                    android:id="@+id/pass"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/enterusuario"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pass"
+                    android:inputType="textPassword"
+                    android:id="@+id/enterpass"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Olvidaste tu contraseña?"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="16dp"
+                    android:id="@+id/olvidar"
+                    android:layout_marginTop="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/enterpass"/>
+
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:text="Iniciar sesión"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button"
+                    android:textColor="@color/colorText"
+                    android:layout_below="@+id/olvidar"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/entrar"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registrar"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="16dp"
+                    android:id="@+id/registrar"
+                    android:layout_marginTop="8dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/entrar"/>
+
+            </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

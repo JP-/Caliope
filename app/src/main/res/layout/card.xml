@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv"
+        android:clickable="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:background="@color/WhiteSmoke"
+            android:clickable="true"
+            >
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/imagen"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/animales"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="120dp"
+                android:layout_toRightOf="@id/imagen"
+                android:layout_marginRight="10dp"
+                android:id="@+id/separator"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nombre"
+                android:text="Animales"
+                android:layout_toRightOf="@id/separator"
+                android:textSize="28sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edad"
+                android:text="Edad: 5 años"
+                android:layout_toRightOf="@id/separator"
+                android:layout_below="@id/nombre"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                android:textColor="@color/White"
+                android:text="Jugar"
+                android:id="@+id/jugar"
+                android:textSize="20sp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/button"
+                android:layout_toRightOf="@id/separator"
+                android:layout_below="@id/edad"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
